@@ -3,7 +3,8 @@ import random
 name = raw_input("Welcome. Enter your name here: ")
 print "Ok, %s, I'm thinking of a number between 1 and 100." % name 
 print "Keep entering a guess, I'll give you hints to tell you if your high or low"
-answer = random.randint(0,101)
+
+answer = random.randint(1,100)
 tries = 1
 
 
