@@ -1,6 +1,12 @@
 import random
 
-name = raw_input("Welcome. Enter your name here: ")
+name = ""
+
+while len(name) < 1 or name.isspace() == True or name.istitle() == False:
+    name = raw_input("Welcome. Enter your name here: ")
+    name = name.title()
+
+
 print "Ok, %s, I'm thinking of a number between 1 and 100." % name 
 print "Keep entering a guess, I'll give you hints to tell you if your high or low"
 
