@@ -9,10 +9,9 @@ tries = 1
 
 while True:
     guess = raw_input("Guess a number: ")
-    print answer
-    if guess.isdigit() == True:
+    if guess.isdigit():
         guess = int(guess)    
-        if guess in range(0,101):
+        if  0 < guess < 100 :
             if guess > answer:
                 print "Your guess is too high, try again."
                 tries += 1
